@@ -1,4 +1,4 @@
-/*************************************************************************************
+/******************************************************************************************
 Programming Skills Challenge - Siemens
 Exercicio 4. O programa verifica se é possível transformar a string s na string t com 
 k ou mais movimentos (*obs: deletar ou concatenar string vazias são considerados movimentos)
@@ -6,13 +6,14 @@ For validation purpose, please go to: https://www.onlinegdb.com/maRpqFfZKH
 
 Criado em 01/03/2024 - 06:52pm
 Autora: Mariana Uzeda - mariana.uzeda@gmail.com
-*******************************************************************************/
+*******************************************************************************************/
 #include <iostream>
 #include <string>
 
 using namespace std;
-
-// Função para verificar se é possível converter s em t usando k operações
+/******************************************************************************************
+Função para verificar se é possível converter s em t usando k operações
+*******************************************************************************************/
 string ConcatRemove(string s, string t, int k) {
     int LetrasIguais = 0;
 
@@ -35,7 +36,9 @@ string ConcatRemove(string s, string t, int k) {
         return "Não";
     }
 }
-
+/******************************************************************************************
+Programa Principal
+*******************************************************************************************/
 int main() {
     // Entrada
     string s, t;
